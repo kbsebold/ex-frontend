@@ -34,7 +34,7 @@ body {
 
 .soldier {
     height: 250px;
-    animation: walk 5s infinite;
+    animation: walk 10s infinite;
     margin-top: 50px;
 }
 
