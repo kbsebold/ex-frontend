@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------ KEYFRAMES --------------------- */
+
+@keyframes aumentar {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes walk {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    } 
+
+    to {
+        transform: translateX(1600%);
+        opacity: 1;
+    }
+}
+
+
+body {
+    background-color: rgba(24, 2, 2, 0.637);
+}
+
+.soldier {
+    height: 250px;
+    animation: walk 5s infinite;
+    margin-top: 50px;
+}
+
+
+.mcr {
+    width: 300px;
+    animation: aumentar 5s infinite;
+}
+
+
+button {
+    width: 300px;
+    height: 80px;
+    background-color: rgb(97, 4, 4);   
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 1.5s ease-in-out;
+}
+
+button:hover {
+    background-color: black;
+}
+
+.center {
+    text-align: center;
+    margin-top: 30px;
+}
